@@ -11,22 +11,22 @@ const searchContentSchema = z.object({
 type SearchContentInputs = z.infer<typeof searchContentSchema>;
 
 export function Search() {
-  const { fetchPosts } = usePosts();
+  const { posts, fetchPosts } = usePosts();
 
-  const { handleSubmit, register } = useForm<SearchContentInputs>({
+  const { handleSubmit, register, reset } = useForm<SearchContentInputs>({
     resolver: zodResolver(searchContentSchema),
   });
 
   function handleSearchContent(data: SearchContentInputs) {
     fetchPosts(data.query);
-    console.log(data);
+    reset();
   }
 
   return (
     <SearchContainer onSubmit={handleSubmit(handleSearchContent)}>
       <div className='posts'>
         <h2>Publicações</h2>
-        <p>6 publicações</p>
+        <p>{posts.length} publicações</p>
       </div>
       <SearchForm>
         <input

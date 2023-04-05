@@ -8,7 +8,7 @@ export function Posts() {
   return (
     <PostsContainer>
       {posts?.map(({ id, title, content }) => {
-        return <Post key={id} title={title} content={content} />;
+        return <Post key={id} id={id} title={title} content={content} />;
       })}
     </PostsContainer>
   );

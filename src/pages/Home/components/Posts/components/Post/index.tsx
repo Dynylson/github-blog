@@ -1,16 +1,19 @@
+import { Link } from "react-router-dom";
 import { PostContainer } from "./styles";
 
 export interface PostProps {
-  id?: number;
+  id: number;
   title: string;
   content: string;
 }
 
-export function Post({ title, content }: PostProps) {
+export function Post({ id, title, content }: PostProps) {
   return (
     <PostContainer>
-      <h2>{title}</h2>
-      <p>{content}</p>
+      <Link to={`posts/${id}`}>
+        <h2>{title}</h2>
+        <p>{content}</p>
+      </Link>
     </PostContainer>
   );
 }
