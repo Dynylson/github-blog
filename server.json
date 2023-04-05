@@ -1,0 +1,29 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "5 razões para aprender Python em 2023",
+      "content": "Python é uma das linguagens de programação mais populares do mundo, e há muitas razões pelas quais você deveria aprender a usá-la em 2023. Neste post, vamos explorar cinco razões pelas quais Python é uma ótima escolha para quem quer começar a programar ou expandir suas habilidades."
+    },
+    {
+      "id": 2,
+      "title": "Como criar uma aplicação React em 10 minutos",
+      "content": "React é uma biblioteca de JavaScript muito popular para a criação de interfaces de usuário. Neste tutorial rápido, vamos mostrar como criar uma aplicação React simples em apenas 10 minutos, usando o Create React App e algumas linhas de código básicas."
+    },
+    {
+      "id": 3,
+      "title": "Os 10 principais frameworks de desenvolvimento web para 2023",
+      "content": "Com tantos frameworks de desenvolvimento web disponíveis, pode ser difícil escolher qual usar em seus projetos. Neste post, vamos listar os 10 principais frameworks de desenvolvimento web que você deve considerar usar em 2023, incluindo informações sobre suas principais características e vantagens."
+    },
+    {
+      "id": 4,
+      "title": "Como construir uma API RESTful com Node.js e Express",
+      "content": "APIs RESTful são uma forma popular de criar serviços web escaláveis e flexíveis. Neste tutorial, vamos mostrar como construir uma API RESTful simples usando o Node.js e o framework Express, incluindo exemplos de como criar rotas, usar middleware e lidar com solicitações e respostas."
+    },
+    {
+      "id": 5,
+      "title": "Por que o Kubernetes é importante para o desenvolvimento de aplicações em 2023",
+      "content": "Kubernetes é uma plataforma de orquestração de contêineres que permite gerenciar e escalar aplicativos em contêineres de forma eficiente e confiável. Neste post, vamos explicar por que o Kubernetes é uma tecnologia importante para desenvolvedores e empresas em 2023, incluindo exemplos de casos de uso e vantagens para a entrega de software."
+    }
+  ]
+}

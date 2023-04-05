@@ -4,6 +4,7 @@ export const SearchContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-top: 4.5rem;
+  margin-bottom: 3rem;
 
   .posts {
     display: flex;
