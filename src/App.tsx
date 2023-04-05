@@ -3,15 +3,18 @@ import { GlobalStyle } from "./styles/global";
 import { ThemeProvider } from "styled-components";
 import { defaultTheme } from "./styles/themes/default";
 import { Router } from "./Router";
+import { PostsProvider } from "./contexts/PostsContext";
 
 function App() {
   return (
     <ThemeProvider theme={defaultTheme}>
-      <BrowserRouter>
-        <Router />
-      </BrowserRouter>
+      <PostsProvider>
+        <BrowserRouter>
+          <Router />
+        </BrowserRouter>
 
-      <GlobalStyle />
+        <GlobalStyle />
+      </PostsProvider>
     </ThemeProvider>
   );
 }
