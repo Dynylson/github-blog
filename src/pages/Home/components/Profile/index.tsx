@@ -33,8 +33,6 @@ export function Profile() {
     fetchGithubUserData("Dynylson");
   }, []);
 
-  console.log(userData);
-
   return (
     <ProfileContainer>
       <ProfileDataContainer>
