@@ -1,5 +1,5 @@
 import { usePosts } from "../../../../contexts/PostsContext";
-import { Post, PostProps } from "./components/Post";
+import { Post } from "./components/Post";
 import { PostsContainer } from "./styles";
 
 export function Posts() {

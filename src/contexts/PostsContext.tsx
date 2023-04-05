@@ -15,6 +15,7 @@ export interface Post {
 
 interface PostsContextType {
   posts: Post[];
+  fetchPosts: (query?: string) => Promise<void>;
 }
 
 interface PostsProviderProps {
@@ -26,8 +27,12 @@ const PostsContext = createContext({} as PostsContextType);
 export function PostsProvider({ children }: PostsProviderProps) {
   const [posts, setPosts] = useState<Post[]>([]);
 
-  async function fetchPosts() {
-    const response = await api.get("http://localhost:3000/posts");
+  async function fetchPosts(query?: string) {
+    const response = await api.get("http://localhost:3000/posts", {
+      params: {
+        q: query,
+      },
+    });
 
     setPosts(response.data);
   }
@@ -37,7 +42,9 @@ export function PostsProvider({ children }: PostsProviderProps) {
   }, []);
 
   return (
-    <PostsContext.Provider value={{ posts }}>{children}</PostsContext.Provider>
+    <PostsContext.Provider value={{ posts, fetchPosts }}>
+      {children}
+    </PostsContext.Provider>
   );
 }
 
